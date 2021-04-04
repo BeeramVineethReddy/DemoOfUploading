@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Select the image format</title>
+     <link rel="stylesheet" href="../styles.css">
+     <script src="wsi format.js"></script>
+ </head>
+ <body>
+
+    <ul class="breadcrumb">
+        <li><a href="../selectdatatype/selectdatatype.html">DataType Selection</a></li>
+        <li><a href="../wsi format/wsi format.html">File Format Selection</a></li>
+      </ul>
+
+      <div>
+        <h2 style="text-align: center;">File Format Selection</h2>
+        <label for="format">Select Image format :</label>
+        <select name="format" id="format">
+            <option value="none">Select</option>
+            <option value="jpg">JPEG format</option>
+            <option value="png">PNG format</option>
+            <option value="svs">SVS format</option>
+            <option value="tiff">TIFF format</option>
+          </select>
+          <p hidden style="color: red;" id="none"> please select a format </p>
+          <br><br><br>
+          <input type="button" value="continue" onclick="return redirectToNext()">
+          <br><br>
+      </div>
+
+    
+
+ </body>
+ </html>

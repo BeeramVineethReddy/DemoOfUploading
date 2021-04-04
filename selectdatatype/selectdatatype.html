@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="selectdatatype.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Select Datatype to upload  /</title>
+</head>
+<body>
+
+    <ul class="breadcrumb">
+        <li><a href="../selectdatatype/selectdatatype.html">DataType Selection</a></li>
+      </ul>
+
+      <div>
+
+        <h2 style="text-align: center;">Datatype Selection</h2>
+        <label for="datatype">Select Datatype to upload :</label>
+        <select name="datatype" id="datatype">
+            <option value="none">Select</option>
+            <option value="slide">Whole Slide Image</option>
+            <option value="anno">Annotation</option>
+            <option value="hm">HeatMaps</option>
+            <option value="patches">Patches</option>
+          </select>
+          <p hidden style="color: red;" id="none"> please select a datatype </p>
+          <br><br><br>
+          <input type="button" value="continue" onclick="return redirectToNext()">
+          <br><br>
+      </div>
+        
+    
+</body>
+</html>

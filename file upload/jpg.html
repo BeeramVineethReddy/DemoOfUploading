@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+      function myfn(myfile)
+      {
+        console.log(document.getElementById(x).name);
+      }
+    </script>
+    <title>JPG file upload</title>
+</head>
+<body>
+    <ul class="breadcrumb">
+        <li><a href="../selectdatatype/selectdatatype.html">DataType Selection</a></li>
+        <li><a href="../anno format/anno format.html">File Format Selection</a></li>
+        <li><a href="../file upload/jpg.html">JPG file upload</a></li>
+      </ul>
+      <div>
+        <h2>Choosing a File</h2>
+        
+        <input id = 'x' type="file" accept="jpg , jpeg" multiple>
+        <br><br><br>
+        <input type="button" value="upload" onclick="return myfn(this)">
+        <br><br>
+      </div>
+</body>
+</html>
